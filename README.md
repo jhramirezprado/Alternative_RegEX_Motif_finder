@@ -44,6 +44,9 @@ Histidine (**H**) motif: **[H]**[GIA][TSDNCM][^R][VCTLIA][AISTG][GSHAL]
 
 Serine (**S**) motif: [G][TN]**[S]**[^A][ASG][STAVCLG][PAG]
 
+![Screenshot from 2021-03-16 19-12-19](https://user-images.githubusercontent.com/79963269/111399756-9d25ac00-868b-11eb-8376-c2d9fdd248b1.png)
+
+
 Searches in the metagenome based on pattern matching of the regular expression, were performed using the Linux command “grep” typing the following command line in a terminal window:
 
 <pre><code>
@@ -59,6 +62,6 @@ $perl -lane '{$c=0} if (/>/) {$h=$_; $h=~s/>//} else {while (/([VIA][^T][VIFGL][
 A bash file including all the commands in sequential order of execution, from translation of contigs to retrieval of the S8A CT subsequences, is provided.
 A thorugh explanation of all options used is included (Data_mining_single.sh)
 
-Our methodology is easily scalable; using “for in” loops the commands can be iterated across all files present in a folder effectively mining multiple metagenomes consecutively (Dta_mining_multi.sh)
+Our methodology is easily scalable; using “for in” loops the commands can be iterated across all files present in a folder effectively mining multiple metagenomes consecutively (Data_mining_multi.sh)
 
 
